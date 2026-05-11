@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="合同会社アイフェイス｜本当に良いものを、必要な人へ。営業販売代行と環境商材で、社会と未来に貢献します。" />
+  <meta name="description" content="合同会社アイフェイス｜本当に良いと思えるものだけを、必要な人へ。" />
   <title>合同会社アイフェイス｜iface</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;700;900&family=Sacramento&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20260512" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@400;500;700;900&family=Allura&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260512d" />
 </head>
 <body>
   <header class="site-header" id="siteHeader">
     <div class="header-inner">
       <a href="#top" class="logo">
-        <span class="logo-row1"><span class="dot"></span>iface Co., Ltd.</span>
-        <span class="logo-row2">合同会社アイフェイス</span>
+        <span class="logo-row1">合同会社アイフェイス</span>
+        <span class="logo-row2"><span class="dot"></span>iface  Co., Ltd.</span>
       </a>
       <div class="header-right">
-        <span class="page-no">1<span>/</span><em>6</em></span>
+        <span class="page-no" id="pageNo"><em>1</em><span class="sep">/</span>6</span>
         <button class="menu-toggle" id="menuToggle" aria-label="メニュー" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -26,9 +26,9 @@
     </div>
     <nav class="nav-panel" id="globalNav" aria-hidden="true">
       <ul>
-        <li><a href="#about"><em>01</em><span class="ja">理念</span><span class="en">Philosophy</span></a></li>
-        <li><a href="#features"><em>02</em><span class="ja">特徴</span><span class="en">Features</span></a></li>
-        <li><a href="#pillars"><em>03</em><span class="ja">事業の柱</span><span class="en">Pillars</span></a></li>
+        <li><a href="#about"><em>01</em><span class="ja">理念</span><span class="en">Our Belief</span></a></li>
+        <li><a href="#features"><em>02</em><span class="ja">特徴</span><span class="en">Our Features</span></a></li>
+        <li><a href="#pillars"><em>03</em><span class="ja">事業の柱</span><span class="en">Our Pillars</span></a></li>
         <li><a href="#business"><em>04</em><span class="ja">事業内容</span><span class="en">Business</span></a></li>
         <li><a href="#company"><em>05</em><span class="ja">会社情報</span><span class="en">Company</span></a></li>
         <li><a href="#contact"><em>06</em><span class="ja">お問い合わせ</span><span class="en">Contact</span></a></li>
@@ -37,172 +37,157 @@
   </header>
 
   <main id="top">
-    <!-- 01: HERO -->
-    <section class="hero">
+    <section class="hero" data-page="1">
       <div class="hero-photo" aria-hidden="true">
-        <div class="hero-photo-img"></div>
-        <div class="hero-vignette"></div>
-        <div class="hero-grain"></div>
+        <div class="ph-base"></div>
+        <div class="ph-shapes">
+          <div class="bolt b1"></div>
+          <div class="bolt b2"></div>
+          <div class="bolt b3"></div>
+          <div class="bolt b4"></div>
+          <div class="wrench"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="ph-vignette"></div>
+        <div class="ph-grain"></div>
       </div>
-      <div class="hero-inner">
-        <p class="hero-script">
-          <span class="l1">Select <span class="middot">·</span> Trust</span>
-          <span class="l2">Good <span class="middot">·</span> Connect</span>
-        </p>
+      <div class="hero-script">
+        <span class="l1">Trust <span class="dot-sep">·</span> Sincerity</span>
+        <span class="l2">Value <span class="dot-sep">·</span> Connect</span>
       </div>
     </section>
 
-    <!-- 02: PHILOSOPHY -->
-    <section class="section philosophy" id="about">
+    <section class="section philosophy" id="about" data-page="2">
       <div class="container">
-        <p class="script-en">Our Belief</p>
+        <div class="script-eyebrow">Our Belief</div>
         <div class="philo-grid">
           <div class="philo-title">
             <h2>
-              <span>「本当に良いもの」だけを</span>
-              <span>選び、必要な人へ</span>
-              <span>届けるという信念</span>
+              <span>ただ利益を、</span>
+              <span>追求しない。</span>
             </h2>
+            <p class="philo-sub">It's not just about profit.</p>
           </div>
           <div class="philo-body">
-            <p>
-              アイフェイスは、ただ利益を追求するためだけに商品を販売する会社ではありません。
-              「これを売ってほしい」と依頼された商品でも、私たち自身が心から「良い」と思えなければ取り扱いません。
+            <p class="lead">
+              アイフェイスでは、これを売ってほしいと依頼された<br/>
+              企業の商品でも、自分たちが本当に良いと思えなければ売りません。
             </p>
             <p>
-              あくまでもアイフェイスが「本当に良い」と判断したものをピックアップし、必要としている方の手元へ届けます。
-              良いものを買いたい人、良いものを売りたい人。その双方の信頼に応えうる「顔（face）」でありたい。
-              それが、社名 <em>iface</em> に込めた想いです。
-            </p>
-            <p>
-              利益よりも、信頼。誠実な取引の積み重ねが、私たちの未来を支えます。
+              あくまでもアイフェイスが「良い」と判断したものをピックアップして販売します。
+              良いものを買いたい人、良いものを売りたい人。その双方の想いを結ぶ「顔（face）」でありたい。
+              それが、社名 iface に込めた想いです。
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 03: FEATURES -->
-    <section class="section features" id="features">
+    <section class="section features" id="features" data-page="3">
       <div class="container">
-        <p class="script-en center">Our Features</p>
-        <h2 class="head-jp center">アイフェイスの特徴</h2>
+        <div class="script-eyebrow center">Our Features</div>
+        <h2 class="head-jp center">当社の特徴</h2>
         <ol class="feat-list">
           <li>
             <span class="fnum">1<i>.</i></span>
             <div>
               <h3>厳選した商材だけを扱う</h3>
-              <p>営業依頼を受けても、自分たちで「本当に良い」と確信できないものは扱いません。アイフェイスが推す商品は、すべて自社の目で選び抜いたものです。</p>
+              <p>営業依頼があっても、自分たちが本当に良いと思えないものは扱わない。アイフェイスが取り扱う商品は、すべて自分たちの目で選んだものだけです。</p>
             </div>
           </li>
           <li>
             <span class="fnum">2<i>.</i></span>
             <div>
-              <h3>環境と暮らしに貢献する</h3>
-              <p>車の燃費向上、電気代の削減など、家計と地球の両方にやさしい商材を中心に取り扱います。日々の暮らしを少しずつ軽くしていきます。</p>
+              <h3>環境と暮らしへの貢献</h3>
+              <p>車の燃費向上、電気代の削減など、家計と地球にやさしい環境商材を中心に取り扱います。日々の暮らしを、少しずつ軽くしていきます。</p>
             </div>
           </li>
           <li>
             <span class="fnum">3<i>.</i></span>
             <div>
               <h3>次世代技術との連携</h3>
-              <p>廃プラスチックから原油を創るなど、住友化学とコラボするパートナー企業と連携し、循環型社会の実現を後押しします。</p>
+              <p>廃プラスチックから原油を創るなど、住友化学とコラボするパートナー企業と連携し、循環型社会づくりを後押しします。</p>
             </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- 04: PILLARS -->
-    <section class="section pillars" id="pillars">
+    <section class="section pillars" id="pillars" data-page="4">
       <div class="container">
-        <p class="script-en">Three Pillars</p>
+        <div class="script-eyebrow">Our Pillars</div>
         <h2 class="head-jp">事業の柱</h2>
         <div class="pillars-grid">
           <article>
-            <p class="p-en">01 Sales Agent</p>
+            <p class="p-num">01</p>
             <h3>営業販売代行</h3>
-            <ul>
-              <li>新規販路の開拓</li>
-              <li>BtoB商談・提案</li>
-              <li>セレクト型代理販売</li>
-            </ul>
+            <p class="p-desc">自分たちが信頼できる商材だけを、誠実に届ける販売代行業。</p>
           </article>
           <article>
-            <p class="p-en">02 Eco Products</p>
+            <p class="p-num">02</p>
             <h3>環境商材</h3>
-            <ul>
-              <li>燃費向上ソリューション</li>
-              <li>電力コスト削減</li>
-              <li>省エネ・脱炭素商材</li>
-            </ul>
+            <p class="p-desc">車の燃費向上、電気代の削減など、地球と家計にやさしい商材。</p>
           </article>
           <article>
-            <p class="p-en">03 Circular</p>
+            <p class="p-num">03</p>
             <h3>資源循環</h3>
-            <ul>
-              <li>廃プラ→原油 リサイクル</li>
-              <li>住友化学との協業案件</li>
-              <li>サーキュラーエコノミー</li>
-            </ul>
+            <p class="p-desc">廃プラスチックから原油へ。住友化学と協業する次世代技術の橋渡し。</p>
           </article>
           <article>
-            <p class="p-en">04 Alliance</p>
+            <p class="p-num">04</p>
             <h3>パートナーシップ</h3>
-            <ul>
-              <li>㈱グローバルアライアンスパートナー</li>
-              <li>伊藤社長とのコラボ案件</li>
-              <li>取扱企業ネットワーク</li>
-            </ul>
+            <p class="p-desc">㈱グローバルアライアンスパートナー伊藤社長との取り組み。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- 05: BUSINESS -->
-    <section class="section business" id="business">
+    <section class="section business" id="business" data-page="5">
       <div class="container">
-        <p class="script-en">Our Business</p>
+        <div class="script-eyebrow">Business</div>
         <h2 class="head-jp">事業内容</h2>
         <div class="biz-card">
-          <p class="biz-cat">国内で広範囲を活かす<br/>アイフェイスの取り組み</p>
-          <h3 class="biz-title">廃プラから、原油を創る。</h3>
+          <p class="biz-cat">国内で広範囲を展開する<br/>パートナーとの取り組み</p>
+          <h3 class="biz-title">廃プラから、<br/>原油を創る。</h3>
           <p class="biz-text">
-            ㈱グローバルアライアンスパートナー（代表：伊藤社長）と提携し、住友化学との協業を背景に、
+            ㈱グローバルアライアンスパートナー（代表：伊藤社長）と提携し、住友化学と協業しながら、
             廃プラスチックを原油へと再資源化する次世代の取り組みを推進。
             「捨てられるはずだったもの」を、もう一度社会の循環に戻していきます。
-          </p>
-          <p class="biz-text">
-            アイフェイスは、こうした技術を保有するパートナー企業と共に、
-            未来に必要とされる選択肢を、誠実に広げてまいります。
           </p>
         </div>
       </div>
       <div class="biz-photo" aria-hidden="true">
-        <div class="biz-photo-img"></div>
+        <div class="bp-base"></div>
+        <div class="bp-shapes">
+          <div class="pipe p1"></div>
+          <div class="pipe p2"></div>
+          <div class="pipe p3"></div>
+          <div class="drop d1"></div>
+          <div class="drop d2"></div>
+        </div>
+        <div class="bp-vignette"></div>
+        <div class="bp-grain"></div>
         <p class="biz-stamp">極<br/><span>める</span></p>
       </div>
     </section>
 
-    <!-- 06: COMPANY -->
-    <section class="section company" id="company">
+    <section class="section company" id="company" data-page="6">
       <div class="container">
-        <p class="script-en">Company Profile</p>
+        <div class="script-eyebrow">Company</div>
         <h2 class="head-jp">会社情報</h2>
         <dl class="company-list">
           <div><dt>会社名</dt><dd>合同会社アイフェイス（iface, LLC）</dd></div>
           <div><dt>事業内容</dt><dd>営業販売代行 / 環境商材販売 / 資源循環事業</dd></div>
-          <div><dt>提携先</dt><dd>株式会社グローバルアライアンスパートナー（伊藤社長） ほか</dd></div>
+          <div><dt>提携先</dt><dd>株式会社グローバルアライアンスパートナー（伊藤社長）</dd></div>
           <div><dt>理念</dt><dd>ただ利益を追求しない。本当に良いと思えるものだけを取り扱う。</dd></div>
-          <div><dt>対応エリア</dt><dd>全国（お問い合わせください）</dd></div>
+          <div><dt>ターゲット</dt><dd>良いものを買いたい人、良いものを売りたい人</dd></div>
         </dl>
       </div>
     </section>
 
-    <!-- 07: CONTACT -->
-    <section class="section contact" id="contact">
+    <section class="section contact" id="contact" data-page="6">
       <div class="container">
-        <p class="script-en">Contact Us</p>
+        <div class="script-eyebrow">Contact</div>
         <h2 class="head-jp">お問い合わせ</h2>
         <p class="lead-jp">
           商品の取扱、販売代行のご相談、提携のご提案など、お気軽にご連絡ください。
@@ -220,9 +205,7 @@
             </select>
           </label>
           <label class="full"><span>お問い合わせ内容 <em>*</em></span><textarea name="message" rows="6" required></textarea></label>
-          <button type="submit" class="submit-btn">
-            送信する<span class="arr">→</span>
-          </button>
+          <button type="submit" class="submit-btn">送信する <span class="arr">→</span></button>
           <p class="form-thanks" hidden>送信ありがとうございました。担当者よりご連絡いたします。</p>
         </form>
       </div>
@@ -245,6 +228,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=20260512"></script>
+  <script src="assets/js/main.js?v=20260512d"></script>
 </body>
 </html>
