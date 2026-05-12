@@ -2,7 +2,36 @@
 // iface — interactions
 // =====================================
 (function () {
-  const header = document.getElementById('siteHeader');
+  // Custom cursor (dot + ring follower)
+  const dot = document.getElementById('cursorDot');
+  const ring = document.getElementById('cursorRing');
+  if (dot && ring && !matchMedia('(hover: none)').matches) {
+    let tx = -100, ty = -100, rx = -100, ry = -100;
+    document.addEventListener('mousemove', (e) => {
+      tx = e.clientX; ty = e.clientY;
+      dot.style.transform = `translate(${tx}px, ${ty}px) translate(-50%, -50%)`;
+    });
+    const tick = () => {
+      rx += (tx - rx) * 0.18;
+      ry += (ty - ry) * 0.18;
+      ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
+      requestAnimationFrame(tick);
+    };
+    tick();
+    const hoverables = 'a, button, input, textarea, select, label, .menu-toggle';
+    document.querySelectorAll(hoverables).forEach((el) => {
+      el.addEventListener('mouseenter', () => ring.classList.add('hover'));
+      el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
+    });
+    document.addEventListener('mouseleave', () => {
+      dot.style.opacity = '0';
+      ring.style.opacity = '0';
+    });
+    document.addEventListener('mouseenter', () => {
+      dot.style.opacity = '1';
+      ring.style.opacity = '1';
+    });
+  }
 
   // Slide-out nav panel
   const toggle = document.getElementById('menuToggle');
@@ -20,13 +49,13 @@
     if (e.key === 'Escape' && nav.classList.contains('open')) setOpen(false);
   });
 
-  // Page indicator
+  // Page indicator with two-digit display
   const pageEm = document.querySelector('#pageNo em');
   const sections = document.querySelectorAll('main > section[data-page]');
   const updatePage = () => {
     if (!pageEm) return;
     const mid = window.innerHeight / 2;
-    let active = '1';
+    let active = '00';
     sections.forEach((s) => {
       const r = s.getBoundingClientRect();
       if (r.top < mid && r.bottom > mid) active = s.dataset.page || active;
@@ -38,7 +67,7 @@
 
   // Reveal on scroll
   const targets = document.querySelectorAll(
-    '.script-eyebrow, .head-jp, .philo-title, .philo-body, .feat-list li, .pillars-grid article, .biz-card, .biz-photo, .company-list, .lead-jp, .contact-form'
+    '.script-eyebrow, .head-jp, .section-num, .philo-title, .philo-body, .feat-list li, .pillars-grid article, .biz-card, .biz-photo, .company-list, .lead-jp, .contact-form, .hanko'
   );
   targets.forEach((el) => el.classList.add('reveal'));
   if ('IntersectionObserver' in window) {
