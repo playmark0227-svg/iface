@@ -165,7 +165,7 @@ body.over-light .page-no .sep { color: var(--ink-mute); }
 .hero-photo { position: absolute; inset: 0; z-index: 0; }
 .ph-img {
   position: absolute; inset: 0;
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/gap_0096.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(0.85) contrast(1.05) saturate(0.85);
