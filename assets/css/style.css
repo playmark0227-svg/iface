@@ -246,16 +246,16 @@ body.over-light .page-no .sep { color: var(--ink-mute); }
 .hero-eyebrow { display: block; font-family: var(--jp-s); font-size: 13px; color: var(--paper-mute); letter-spacing: 0.2em; margin-bottom: 24px; padding-left: 4px; }
 .big-jp {
   display: block;
-  font-family: var(--jp-s);
-  font-size: clamp(40px, 7vw, 100px);
+  font-family: var(--jp);
+  font-size: clamp(26px, 3.8vw, 52px);
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.65;
   color: var(--paper);
-  letter-spacing: 0.04em;
-  text-shadow: 0 4px 30px rgba(0,0,0,0.8);
+  letter-spacing: 0.08em;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.7);
 }
 .big-jp span { display: block; }
-.big-jp .red { color: var(--red); text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+.big-jp .red { color: var(--red); text-shadow: 0 4px 24px rgba(0,0,0,0.7); }
 
 .hero-ticker {
   position: absolute;
