@@ -247,11 +247,11 @@ body.over-light .page-no .sep { color: var(--ink-mute); }
 .big-jp {
   display: block;
   font-family: var(--jp);
-  font-size: clamp(26px, 3.8vw, 52px);
+  font-size: clamp(34px, 5.2vw, 76px);
   font-weight: 700;
-  line-height: 1.65;
+  line-height: 1.55;
   color: var(--paper);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-shadow: 0 4px 24px rgba(0,0,0,0.7);
 }
 .big-jp span { display: block; }
