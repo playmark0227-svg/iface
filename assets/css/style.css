@@ -2,23 +2,12 @@
    合同会社アイフェイス
    ============================================ */
 :root {
-  --bg: #0a0a0c;
-  --bg-2: #111114;
-  --bg-3: #060608;
-  --paper: #ede4d2;
-  --paper-2: #f6efdf;
-  --paper-light: #f4ede0;
-  --paper-dim: rgba(237,228,210,0.75);
-  --paper-mute: rgba(237,228,210,0.45);
-  --ink: #0a0a0c;
-  --ink-2: #2a2622;
-  --ink-dim: rgba(10,10,12,0.7);
-  --ink-mute: rgba(10,10,12,0.45);
-  --red: #c8323f;
-  --red-2: #a82834;
-  --red-soft: rgba(200,50,63,0.35);
-  --line: rgba(237,228,210,0.14);
-  --line-d: rgba(10,10,12,0.14);
+  --bg: #0a0a0c; --bg-2: #111114; --bg-3: #060608;
+  --paper: #ede4d2; --paper-2: #f6efdf; --paper-light: #f4ede0;
+  --paper-dim: rgba(237,228,210,0.75); --paper-mute: rgba(237,228,210,0.45);
+  --ink: #0a0a0c; --ink-2: #2a2622; --ink-dim: rgba(10,10,12,0.7); --ink-mute: rgba(10,10,12,0.45);
+  --red: #c8323f; --red-2: #a82834; --red-soft: rgba(200,50,63,0.35);
+  --line: rgba(237,228,210,0.14); --line-d: rgba(10,10,12,0.14);
   --jp: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
   --jp-s: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
   --script: "Allura", cursive;
@@ -46,13 +35,13 @@ ul, ol { list-style: none; }
 .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; pointer-events: none; }
 .site-header > * { pointer-events: auto; }
 .header-inner { display: flex; align-items: flex-start; justify-content: space-between; padding: 22px 28px; }
-.logo { display: inline-flex; align-items: center; background: rgba(10,10,12,0.55); backdrop-filter: blur(8px); padding: 12px 20px; border: 1px solid var(--line); transition: background .35s, border-color .35s; }
-.logo-row1 { display: inline-flex; align-items: center; gap: 8px; font-family: var(--jp-s); font-size: 15px; font-weight: 700; letter-spacing: 0.1em; color: var(--paper); transition: color .35s; }
+.logo { display: inline-flex; align-items: center; background: rgba(10,10,12,0.55); backdrop-filter: blur(8px); padding: 12px 20px; border: 1px solid var(--line); }
+.logo-row1 { display: inline-flex; align-items: center; gap: 8px; font-family: var(--jp-s); font-size: 15px; font-weight: 700; letter-spacing: 0.1em; color: var(--paper); }
 .logo-row1 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--red); }
-.header-right { display: flex; align-items: center; gap: 18px; background: rgba(10,10,12,0.55); backdrop-filter: blur(8px); padding: 10px 14px; border: 1px solid var(--line); transition: background .35s, border-color .35s; }
-.page-no { font-family: var(--serif-it); font-style: italic; font-size: 14px; color: var(--paper); letter-spacing: 0.05em; min-width: 56px; text-align: right; transition: color .35s; }
+.header-right { display: flex; align-items: center; gap: 18px; background: rgba(10,10,12,0.55); backdrop-filter: blur(8px); padding: 10px 14px; border: 1px solid var(--line); }
+.page-no { font-family: var(--serif-it); font-style: italic; font-size: 14px; color: var(--paper); letter-spacing: 0.05em; min-width: 56px; text-align: right; }
 .page-no em { font-weight: 500; }
-.page-no .sep { color: var(--paper-mute); margin: 0 4px; font-style: normal; transition: color .35s; }
+.page-no .sep { color: var(--paper-mute); margin: 0 4px; font-style: normal; }
 .menu-toggle { width: 40px; height: 40px; border-radius: 50%; background: var(--red); border: 0; position: relative; transition: background .3s, transform .3s; }
 .menu-toggle:hover { background: var(--red-2); transform: scale(1.06); }
 .menu-toggle span { position: absolute; left: 11px; right: 11px; height: 1.5px; background: var(--paper); transition: transform .3s, opacity .3s; }
@@ -62,11 +51,6 @@ ul, ol { list-style: none; }
 .menu-toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
 .menu-toggle.open span:nth-child(2) { opacity: 0; }
 .menu-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-body.over-light .logo { background: rgba(255,255,255,0.7); border-color: var(--line-d); }
-body.over-light .logo-row1 { color: var(--ink); }
-body.over-light .header-right { background: rgba(255,255,255,0.7); border-color: var(--line-d); }
-body.over-light .page-no { color: var(--ink); }
-body.over-light .page-no .sep { color: var(--ink-mute); }
 .nav-panel { position: fixed; top: 0; right: 0; bottom: 0; width: min(440px, 92vw); background: var(--bg-3); border-left: 1px solid var(--line); padding: 120px 48px 40px; transform: translateX(100%); transition: transform .55s cubic-bezier(.22,.61,.36,1); z-index: 90; display: flex; flex-direction: column; }
 .nav-panel.open { transform: translateX(0); }
 .nav-panel ul { display: grid; gap: 4px; }
@@ -86,7 +70,7 @@ body.over-light .page-no .sep { color: var(--ink-mute); }
 .bolt.b2 { width: 180px; height: 180px; top: 38%; left: 42%; transform: rotate(12deg); }
 .bolt.b3 { width: 260px; height: 260px; top: 22%; left: 62%; transform: rotate(-4deg); }
 .ph-vignette { position: absolute; inset: 0; z-index: 3; background: radial-gradient(ellipse 110% 95% at 50% 50%, transparent 30%, rgba(0,0,0,0.5) 78%, rgba(0,0,0,0.9) 100%), linear-gradient(180deg, rgba(0,0,0,0.5) 0%, transparent 25%, transparent 55%, rgba(0,0,0,0.92) 100%); }
-.ph-grain { position: absolute; inset: 0; z-index: 4; background-image: repeating-radial-gradient(circle at 22% 28%, rgba(237,228,210,0.022) 0 1px, transparent 1px 4px), repeating-radial-gradient(circle at 75% 65%, rgba(237,228,210,0.018) 0 1px, transparent 1px 3px); mix-blend-mode: overlay; opacity: 0.9; }
+.ph-grain { position: absolute; inset: 0; z-index: 4; background-image: repeating-radial-gradient(circle at 22% 28%, rgba(237,228,210,0.022) 0 1px, transparent 1px 4px); mix-blend-mode: overlay; opacity: 0.9; }
 .hero-vert { position: absolute; top: 16vh; right: 56px; z-index: 5; writing-mode: vertical-rl; text-orientation: mixed; font-family: var(--jp-s); font-size: 14px; font-weight: 500; letter-spacing: 0.5em; line-height: 2; color: var(--paper-dim); padding-left: 24px; border-left: 1px solid var(--line); }
 .hero-stamp { position: absolute; top: 14vh; left: 56px; z-index: 5; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; border: 2px solid var(--red); border-radius: 50%; transform: rotate(-8deg); box-shadow: 0 0 0 3px rgba(200,50,63,0.06), inset 0 0 6px rgba(200,50,63,0.25); background: rgba(200,50,63,0.08); flex-direction: column; gap: 2px; }
 .hero-stamp .seal-jp { font-family: var(--jp-s); font-size: 30px; font-weight: 700; color: var(--red); line-height: 1; }
@@ -133,6 +117,13 @@ body.over-light .page-no .sep { color: var(--ink-mute); }
 .philo-body p { font-family: var(--jp-s); font-size: 15px; line-height: 2.3; color: var(--ink-dim); letter-spacing: 0.05em; }
 .hanko { position: absolute; right: 0; bottom: -32px; width: 80px; height: 80px; border: 2px solid var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(8deg); background: rgba(200,50,63,0.06); box-shadow: inset 0 0 6px rgba(200,50,63,0.25); }
 .hanko span { font-family: var(--jp-s); font-size: 32px; font-weight: 900; color: var(--red); line-height: 1; }
+.photo-strip { position: relative; height: 56vh; min-height: 380px; max-height: 560px; overflow: hidden; background: #000; }
+.ps-img { position: absolute; inset: 0; background-image: url("../img/gap_0096.jpg"); background-size: cover; background-position: center; filter: brightness(0.78) contrast(1.05) saturate(0.9); transform: scale(1.08); }
+.ps-grain { position: absolute; inset: 0; background-image: repeating-radial-gradient(circle at 30% 40%, rgba(237,228,210,0.02) 0 1px, transparent 1px 4px); mix-blend-mode: overlay; }
+.photo-strip::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(244,237,224,1) 0%, rgba(244,237,224,0) 10%, transparent 90%, rgba(10,10,12,1) 100%); pointer-events: none; z-index: 2; }
+.ps-caption { position: absolute; left: 56px; bottom: 48px; z-index: 3; display: flex; flex-direction: column; gap: 10px; }
+.ps-cap-en { font-family: var(--serif-it); font-style: italic; font-size: 14px; letter-spacing: 0.2em; color: var(--paper-dim); }
+.ps-cap-jp { font-family: var(--jp-s); font-size: clamp(22px, 3vw, 36px); font-weight: 700; letter-spacing: 0.15em; color: var(--paper); text-shadow: 0 4px 24px rgba(0,0,0,0.7); }
 .business { background: radial-gradient(ellipse 80% 60% at 50% 110%, rgba(40,30,60,0.4), transparent 70%), linear-gradient(180deg, #0a0a0c 0%, #131220 60%, #0a0a0c 100%); }
 .biz-list { display: grid; gap: 36px; max-width: 920px; margin: 0 auto; }
 .biz-list li { display: grid; grid-template-columns: 110px 1fr; align-items: start; gap: 36px; padding: 44px 0; border-bottom: 1px solid var(--line); }
@@ -154,6 +145,13 @@ body.over-light .page-no .sep { color: var(--ink-mute); }
 .t-and { font-family: var(--jp-s); font-size: 32px; color: var(--red); font-weight: 300; }
 .target-foot { margin-top: 80px; font-family: var(--jp-s); font-size: 15px; color: var(--ink-dim); letter-spacing: 0.08em; line-height: 2.1; }
 .company { background: var(--bg); }
+.company-grid { display: grid; grid-template-columns: 320px 1fr; gap: 60px; align-items: start; margin-top: 16px; }
+.company-photo { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border: 1px solid var(--line); }
+.cp-img { position: absolute; inset: 0; background-image: url("../img/gap_0096.jpg"); background-size: cover; background-position: 35% center; filter: brightness(0.8) contrast(1.06) saturate(0.85); }
+.cp-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, transparent 40%, rgba(0,0,0,0.4) 100%); }
+.cp-frame { position: absolute; left: 18px; bottom: 18px; display: flex; flex-direction: column; gap: 6px; padding: 12px 16px; background: rgba(10,10,12,0.55); backdrop-filter: blur(6px); border-left: 2px solid var(--red); }
+.cp-tag { font-family: var(--jp-s); font-size: 12px; color: var(--red); letter-spacing: 0.2em; }
+.cp-num { font-family: var(--serif-it); font-style: italic; font-size: 13px; color: var(--paper-dim); letter-spacing: 0.15em; }
 .company-list { border-top: 1px solid var(--line); margin-top: 16px; }
 .company-list > div { display: grid; grid-template-columns: 240px 1fr; padding: 30px 8px; border-bottom: 1px solid var(--line); align-items: baseline; }
 .company-list dt { font-family: var(--jp-s); font-size: 13px; font-weight: 700; color: var(--red); letter-spacing: 0.18em; }
@@ -193,6 +191,9 @@ body.over-light .page-no .sep { color: var(--ink-mute); }
   .hero-vert { right: 36px; font-size: 12px; }
   .hero-stamp { left: 36px; width: 84px; height: 84px; }
   .hero-stamp .seal-jp { font-size: 24px; }
+  .ps-caption { left: 36px; bottom: 36px; }
+  .company-grid { grid-template-columns: 1fr; gap: 40px; }
+  .company-photo { aspect-ratio: 16 / 9; max-width: 520px; }
 }
 @media (max-width: 720px) {
   .container { padding: 0 24px; }
@@ -218,6 +219,12 @@ body.over-light .page-no .sep { color: var(--ink-mute); }
   .submit-btn { width: 100%; justify-content: center; padding: 22px 30px; }
   .head-jp { margin-bottom: 60px; letter-spacing: 0.25em; }
   .vertical-jp { font-size: 32px; height: 280px; }
+  .photo-strip { height: 44vh; min-height: 280px; }
+  .ps-caption { left: 24px; bottom: 24px; }
+  .ps-cap-en { font-size: 12px; }
+  .company-grid { gap: 32px; }
+  .company-photo { aspect-ratio: 4 / 3; }
+  .cp-frame { left: 12px; bottom: 12px; padding: 10px 12px; }
   .floating-kanji span { font-size: 80px; }
   .t-card { padding: 36px 26px; }
   .target-foot { margin-top: 50px; }

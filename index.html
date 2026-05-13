@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@400;500;700;900&family=Allura&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20260513a" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260513b" />
 </head>
 <body>
   <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
@@ -141,6 +141,15 @@
       </div>
     </section>
 
+    <section class="photo-strip" aria-hidden="true">
+      <div class="ps-img"></div>
+      <div class="ps-grain"></div>
+      <p class="ps-caption">
+        <span class="ps-cap-en">— A trusted craft.</span>
+        <span class="ps-cap-jp">確かなものを、確かな手で。</span>
+      </p>
+    </section>
+
     <section class="section business" id="business" data-page="03">
       <div class="container">
         <div class="section-num">
@@ -213,13 +222,23 @@
           <span class="num-jp">肆 / 会社情報</span>
         </div>
         <h2 class="head-jp">会社情報</h2>
-        <dl class="company-list">
-          <div><dt>会社名</dt><dd>合同会社アイフェイス</dd></div>
-          <div><dt>事業内容</dt><dd>営業販売代行 / 環境商材販売</dd></div>
-          <div><dt>取扱商材</dt><dd>車の燃費向上、電気代の削減ほか</dd></div>
-          <div><dt>理念</dt><dd>ただ利益を追求しない。アイフェイスが「良い」と思ったものだけを取り扱う。</dd></div>
-          <div><dt>ターゲット</dt><dd>良いものを買いたい人、良いものを売りたい人</dd></div>
-        </dl>
+        <div class="company-grid">
+          <div class="company-photo" aria-hidden="true">
+            <div class="cp-img"></div>
+            <div class="cp-overlay"></div>
+            <div class="cp-frame">
+              <span class="cp-tag">— 現場</span>
+              <span class="cp-num">No.0096</span>
+            </div>
+          </div>
+          <dl class="company-list">
+            <div><dt>会社名</dt><dd>合同会社アイフェイス</dd></div>
+            <div><dt>事業内容</dt><dd>営業販売代行 / 環境商材販売</dd></div>
+            <div><dt>取扱商材</dt><dd>車の燃費向上、電気代の削減ほか</dd></div>
+            <div><dt>理念</dt><dd>ただ利益を追求しない。アイフェイスが「良い」と思ったものだけを取り扱う。</dd></div>
+            <div><dt>ターゲット</dt><dd>良いものを買いたい人、良いものを売りたい人</dd></div>
+          </dl>
+        </div>
       </div>
     </section>
 
@@ -278,6 +297,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=20260513a"></script>
+  <script src="assets/js/main.js?v=20260513b"></script>
 </body>
 </html>
