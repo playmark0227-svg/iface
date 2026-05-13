@@ -70,7 +70,7 @@ ul, ol { list-style: none; }
 .ph-grain { position: absolute; inset: 0; z-index: 4; background-image: repeating-radial-gradient(circle at 22% 28%, rgba(237,228,210,0.022) 0 1px, transparent 1px 4px); mix-blend-mode: overlay; opacity: 0.9; }
 .hero-script { position: absolute; left: 0; right: 0; bottom: 14vh; padding: 0 56px; z-index: 5; pointer-events: none; }
 .hero-eyebrow { display: block; font-family: var(--jp); font-size: 12px; color: var(--paper-mute); letter-spacing: 0.22em; margin-bottom: 22px; padding-left: 4px; }
-.big-jp { display: block; font-family: var(--jp); font-size: clamp(26px, 3.8vw, 52px); font-weight: 700; line-height: 1.65; color: var(--paper); letter-spacing: 0.08em; text-shadow: 0 4px 24px rgba(0,0,0,0.7); }
+.big-jp { display: block; font-family: var(--jp); font-size: clamp(34px, 5.2vw, 76px); font-weight: 700; line-height: 1.55; color: var(--paper); letter-spacing: 0.06em; text-shadow: 0 4px 24px rgba(0,0,0,0.7); }
 .big-jp span { display: block; }
 .big-jp .red { color: var(--red); text-shadow: 0 4px 24px rgba(0,0,0,0.7); }
 .hero-ticker { position: absolute; bottom: 0; left: 0; right: 0; z-index: 5; padding: 16px 0; background: rgba(0,0,0,0.55); backdrop-filter: blur(6px); border-top: 1px solid var(--line); overflow: hidden; white-space: nowrap; }
@@ -195,7 +195,7 @@ ul, ol { list-style: none; }
   .hero { min-height: 100vh; }
   .hero-script { padding: 0 24px; bottom: 14vh; }
   .hero-eyebrow { margin-bottom: 14px; font-size: 11px; }
-  .big-jp { letter-spacing: 0.05em; }
+  .big-jp { letter-spacing: 0.04em; }
   .nav-panel { padding: 110px 28px 40px; width: 100%; }
   .biz-list li { grid-template-columns: 1fr; gap: 14px; padding: 28px 0; }
   .bnum { font-size: 30px; }
