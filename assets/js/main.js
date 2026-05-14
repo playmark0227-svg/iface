@@ -48,6 +48,12 @@
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && nav.classList.contains('open')) setOpen(false);
   });
+  // close on outside click
+  document.addEventListener('click', (e) => {
+    if (!nav.classList.contains('open')) return;
+    if (nav.contains(e.target) || toggle.contains(e.target)) return;
+    setOpen(false);
+  });
 
   // Page indicator with two-digit display
   const pageEm = document.querySelector('#pageNo em');
