@@ -69,21 +69,21 @@ ul, ol { list-style: none; }
 .site-header > * { pointer-events: auto; }
 .header-inner { display: flex; align-items: flex-start; justify-content: space-between; padding: 22px 28px; }
 .logo {
-  display: inline-flex; align-items: center;
+  display: inline-flex; align-items: center; gap: 12px;
   background: rgba(10,10,12,0.55);
   backdrop-filter: blur(8px);
-  padding: 12px 20px;
+  padding: 10px 18px;
   border: 1px solid var(--line);
   transition: background .35s, border-color .35s, color .35s;
 }
+.logo-mark { width: 40px; height: auto; color: var(--paper); display: block; flex-shrink: 0; }
+.logo-mark.f-mark { width: 52px; }
 .logo-row1 {
-  display: inline-flex; align-items: center; gap: 8px;
-  font-family: var(--jp-s);
-  font-size: 15px; font-weight: 700;
+  font-family: var(--jp);
+  font-size: 14px; font-weight: 700;
   letter-spacing: 0.1em;
   color: var(--paper);
 }
-.logo-row1 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--red); }
 
 .header-right {
   display: flex; align-items: center; gap: 18px;
@@ -367,21 +367,22 @@ body.over-light .page-no .sep { color: var(--ink-mute); }
   border-right: 1px solid var(--line-d);
 }
 .vertical-jp {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  font-family: var(--jp-s);
-  font-size: clamp(38px, 5vw, 64px);
+  font-family: var(--jp);
+  font-size: clamp(28px, 3.6vw, 44px);
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.7;
   color: var(--red);
   letter-spacing: 0.12em;
-  height: 480px;
-  display: flex; flex-direction: row-reverse;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 24px;
 }
-.vertical-jp span { display: inline-block; }
-.vertical-jp .break { display: block; width: 100%; height: 24px; flex: 0 0 100%; }
-.vertical-jp .punct { transform: translate(0.2em, -0.5em); display: inline-block; }
+.vertical-jp .vj-col {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: inline-block;
+}
 .brush-stroke {
   margin-top: 28px;
   width: 80px; height: 6px;
@@ -619,8 +620,7 @@ body.over-light .page-no .sep { color: var(--ink-mute); }
 .site-footer { background: #050507; border-top: 1px solid var(--line); padding: 0 0 36px; text-align: center; }
 .footer-marquee { padding: 22px 0; background: rgba(200,50,63,0.04); border-bottom: 1px solid var(--line); overflow: hidden; white-space: nowrap; margin-bottom: 70px; }
 .footer-marquee .ticker-track { animation-duration: 70s; }
-.f-logo { display: inline-flex; align-items: center; gap: 12px; justify-content: center; font-family: var(--jp-s); font-size: 22px; font-weight: 700; color: var(--paper); letter-spacing: 0.1em; margin-bottom: 32px; }
-.f-logo .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--red); }
+.f-logo { display: inline-flex; align-items: center; gap: 14px; justify-content: center; font-family: var(--jp); font-size: 18px; font-weight: 700; color: var(--paper); letter-spacing: 0.1em; margin-bottom: 28px; }
 .f-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 32px; margin-bottom: 50px; padding-bottom: 36px; border-bottom: 1px solid var(--line); }
 .f-nav a { font-family: var(--jp-s); font-size: 13px; color: var(--paper-mute); letter-spacing: 0.1em; }
 .f-nav a:hover { color: var(--red); }
