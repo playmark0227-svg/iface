@@ -1,9 +1,8 @@
-// products page — filter
+// products page filter
 (function () {
   const chips = document.querySelectorAll('.f-chip');
   const cards = document.querySelectorAll('.p-card');
   if (!chips.length || !cards.length) return;
-
   chips.forEach((chip) => {
     chip.addEventListener('click', () => {
       chips.forEach((c) => c.classList.remove('active'));
