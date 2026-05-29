@@ -7,7 +7,6 @@
   --red: #c8323f; --red-2: #a82834; --red-soft: rgba(200,50,63,0.35);
   --line: rgba(237,228,210,0.14); --line-d: rgba(10,10,12,0.14);
   --jp: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
-  --jp-s: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
   --serif-it: "Cormorant Garamond", "Times New Roman", serif;
   --max: 1280px;
 }
@@ -214,4 +213,16 @@ ul, ol { list-style: none; }
   .cp-frame { left: 12px; bottom: 12px; padding: 10px 12px; }
   .t-card { padding: 32px 24px; }
   .target-foot { margin-top: 40px; }
+}
+
+/* ============== reduced motion ============== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .ticker-track { animation: none !important; transform: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
 }

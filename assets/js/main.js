@@ -93,6 +93,14 @@
     targets.forEach((el) => el.classList.add('visible'));
   }
 
+  // Respect reduced motion: pause looping hero/strip video
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('video[autoplay]').forEach((v) => {
+      v.removeAttribute('autoplay');
+      v.pause();
+    });
+  }
+
   // Footer year
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
